@@ -26,4 +26,9 @@
         width: 235px;
         height: 199px;
     }
+
+    .participante {
+        width: 80%;
+        margin-bottom: 0.688rem;
+    }
 }
