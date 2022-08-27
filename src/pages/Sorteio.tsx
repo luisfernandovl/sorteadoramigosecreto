@@ -17,6 +17,8 @@ export default function Sorteio() {
         }
     }
 
+    let visivel = true;
+
     return (
         <Card>
             <section className="sorteio">
@@ -28,7 +30,7 @@ export default function Sorteio() {
                         id="participanteDaVez"
                         placeholder="Selecione o seu nome"
                         value={participanteDaVez}
-                        onChange={evento => setParticipanteDaVez(evento.target.value)}
+                        onChange={evento => {setParticipanteDaVez(evento.target.value); setAmigoSecreto('')}}
                     >
                         <option>Selecione seu nome</option>
                         {participantes.map(participante =>

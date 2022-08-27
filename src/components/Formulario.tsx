@@ -12,7 +12,7 @@ export default function Formulario() {
 
     function adicionarParticipante(evento: React.FormEvent<HTMLFormElement>) {
         evento.preventDefault();
-        adicionarNaLista(nome)
+        adicionarNaLista(nome.trim())
         setNome('');
         inputRef.current?.focus();
     }
